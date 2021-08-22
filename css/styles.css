@@ -224,7 +224,7 @@ button {
 .team-item {
   margin-right: 30px;
   flex-basis: calc((100% - 120px) / 4);
-  text-align: center;
+  /* text-align: center; */
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -233,14 +233,17 @@ button {
 .team-item:last-child {
   margin-right: 0;
 }
+.member {
+  padding: 30px 59px;
+  text-align: center;
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -250,16 +253,20 @@ button {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-bottom: 30px;
 }
 
 /* -----------PORTFOLIO LIST---------- */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-nav-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
+
 .portfolio-nav-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -289,7 +296,6 @@ button {
 .portfolio-work-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
   margin-top: -30px;
   margin-left: -30px;
 }
