@@ -48,11 +48,12 @@ button {
 }
 
 /* ----------------HEADER------------------- */
-/* .header {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between; */
+.header {
+  border-bottom: 1px solid #ececec;
 }
+.nav {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway";
@@ -60,6 +61,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .logo-text {
   color: #2196f3;
@@ -68,7 +70,20 @@ button {
 .logo-second-text {
   color: #000000;
 }
+.header-nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -84,7 +99,16 @@ button {
 .nav-item-link.current {
   color: #2196f3;
 }
-
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-item {
+  display: block;
+}
+.header-item:first-child {
+  margin-right: 50px;
+}
 .header-item-link {
   font-weight: 500;
   font-size: 14px;
@@ -116,7 +140,10 @@ button {
   text-transform: uppercase;
   color: var(--main-title-color);
 
-  /* width: 696px; */
+  width: 696px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -134,9 +161,22 @@ button {
   border-radius: 4px;
   /* border: 1px solid #2196f3; */
 }
-.add-margin {
-  margin-bottom: 94px;
+.section-reason {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+.reason-list {
+  display: flex;
+  margin-right: -30px;
+}
+.reason-item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+.reason-item:last-child {
+  margin-right: 0;
+}
+
 .reason-title {
   font-weight: bold;
   font-size: 14px;
@@ -153,6 +193,17 @@ button {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.section-work {
+  padding-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+.no-gap {
+  display: block;
+}
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -166,7 +217,22 @@ button {
   color: var(--secondary-title-color);
   margin-bottom: 50px;
 }
-
+.team-list {
+  display: flex;
+  margin-right: -30px;
+}
+.team-item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:last-child {
+  margin-right: 0;
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -189,10 +255,14 @@ button {
 
 /* -----------PORTFOLIO LIST---------- */
 .portfolio-nav-list {
-  margin-top: 94px;
-  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
-
+.portfolio-nav-item:not(:last-child) {
+  margin-right: 8px;
+}
 .btn-porfolio {
   font-family: "Roboto";
   font-weight: 500;
@@ -217,15 +287,30 @@ button {
 }
 
 .portfolio-work-list {
-  margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.summary {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-work-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio-work-name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  margin-top: 20px;
-  margin-bottom: 4px;
+  /* padding-top: 20px; */
+  padding-bottom: 4px;
 }
 .portfolio-work-unit {
   font-size: 16px;
